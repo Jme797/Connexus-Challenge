@@ -39,6 +39,10 @@ function slideChange(direction) {
         } else if (direction == "right" && slideNum != 2) {
             slideNum += 1;
         }
+    } else {
+        slide3.style.display = "inline-block";
+        slide2.style.display = "inline-block";
+        slide1.style.display = "inline-block";
     }
 
 
