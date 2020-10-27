@@ -21,9 +21,7 @@ slideChange();
 
 function slideChange(direction) {
 
-
-
-    if (screen.width < 500) {
+    if (window.innerWidth < 500) {
 
         if (direction == "left" && slideNum != 1) {
             slideNum -= 1;
@@ -31,7 +29,7 @@ function slideChange(direction) {
         } else if (direction == "right" && slideNum != 3) {
             slideNum += 1;
         }
-    } else if (screen.width < 1100) {
+    } else if (window.innerWidth < 1100) {
 
         if (direction == "left" && slideNum != 1) {
             slideNum -= 1;
@@ -47,7 +45,7 @@ function slideChange(direction) {
 
 
 
-    if (screen.width < 500) {
+    if (window.innerWidth < 500) {
         setCircles(slideNum);
         switch (slideNum) {
             case 1:
@@ -68,7 +66,7 @@ function slideChange(direction) {
 
         }
 
-    } else if (screen.width < 1100) {
+    } else if (window.innerWidth < 1100) {
 
         switch (slideNum) {
             case 2:
@@ -103,9 +101,9 @@ function setCircles(num) {
 
     let circlesDiv = document.getElementById('cirlcesDiv');
 
-    if (screen.width < 1100 && screen.width > 500) {
+    if (window.innerWidth < 1100 && window.innerWidth > 500) {
         circlesDiv.innerHTML = '<img id="circles" src="assets/cirles.svg">';
-    } else if (screen.width < 500) {
+    } else if (window.innerWidth < 500) {
         switch (num) {
             case 1:
                 circlesDiv.innerHTML = '<img id="circles" src="assets/circleOn.svg">';
@@ -128,7 +126,7 @@ function setCircles(num) {
 
 
 function removeFlex() {
-    if (screen.width < 1100) {
+    if (window.innerWidth < 1100) {
         slideDiv.classList.remove('flexHoriz');
     } else if (!slideDiv.classList.contains('flexHoriz')) {
         slideDiv.classList.add('flexHoriz');
