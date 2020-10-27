@@ -119,15 +119,44 @@ button {
     width: 200px;
     margin-left: 0;
     border: none;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.95;
+}
+.socialIcons:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+.arrows:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+#ppl-button:hover {
+    background-color: white;
+    color: #3F334D;
 }
 .buttonLight {
     background-color: rgba(0, 0, 255, 0);
     border: 2px solid white;
     color: white;
 }
+.buttonLight:hover {
+    background-color: rgb(255, 255, 255);
+    color: #5086CC;
+}
+.buttonColor:hover {
+    background-color: #ffff33;
+}
 .buttonColor {
     background-color: #E6E62E;
     border: 2px solid #E6E62E;
+}
+input {
+    cursor: pointer;
+}
+a:hover {
+    color: #3F334D;
 }
 .textCont {
     width: 450px;
